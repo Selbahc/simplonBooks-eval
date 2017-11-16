@@ -10,9 +10,11 @@ import FetchBooks from './components/FetchBooks';
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="App container">
         <FetchBooks />
-        <BookForm />
+        <form action={'http://localhost:3001/simplonBook/add'} method="post" className="form-group">
+          <BookForm />
+        </form>
       </div>
     );
   }

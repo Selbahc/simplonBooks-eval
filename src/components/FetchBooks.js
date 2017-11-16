@@ -13,7 +13,7 @@ class FetchBooks extends Component {
 
   render() {
     return (
-      <div>
+      <div className="columns">
 
         {this.state.books &&
           this.state.books.map((book, i) => <BookLayout key={i} book={book}/>)
